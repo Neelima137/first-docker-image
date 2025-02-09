@@ -70,20 +70,29 @@ Step3: Build the Docker Image
   docker build -t neelima/first-docker-image:latest .
    ```
 The command docker build is used to build a Docker image from a Dockerfile.
+
 -t: This flag is used to specify a tag for the image. The tag is composed of two parts:
+
 neelima/first-docker-image: This part represents the username/repository name for the image. It's useful for pushing the image to Docker Hub or a similar registry.
+
 :latest: This is the tag or version of the image. The latest tag is a default tag that generally refers to the most recent version of the image.
+
 . (dot): The dot represents the current directory, which tells Docker to look for a Dockerfile in the current directory to build the image. If you are in the directory where the Dockerfile is located, this is the right place to execute the command.
+
+
 Step4: Run the Docker Container:
 ```
 docker run -it neelima/first-docker-image:latest
  ```
 
 The docker run command runs a Docker container from the specified image.
+
 -it: These flags allow you to run the container in interactive mode.
+
 neelima/first-docker-image:latest: This is the name of the image you built earlier. You are telling Docker to run a container from this image.
 
 The output of the docker run command will be the sum of the 2 numbers
+
 ``` The output 
 The sum of 1.5 and 6.3 is 7.8
 ```
